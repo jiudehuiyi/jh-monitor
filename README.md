@@ -78,9 +78,6 @@ JhMonitor.init({
 |    `maxBreadcrumbs`    | `number`   | `20`                                                          | 用户行为存放的最大容量，超过 20 条，最早的一条记录会被覆盖掉                                                                                                                                                            |
 |   `recordScreentime`   | `number`   | `10`                                                          | 单次录屏时长，silentRecordScreen 设为 true， 开启录屏后该设置才有效                                                                                                                                                     |
 | `recordScreenTypeList` | `array`    | `['error', 'unhandledrejection', 'resource', 'fetch', 'xhr']` | 上报录屏的错误列表，默认会上报所有错误发生时的录屏信息，如设置 ['error', 'unhandledrejection'] 则只会上报代码报错时的录屏                                                                                               |
-                                                                                                                                                          |
-| `beforePushBreadcrumb` | `function` | `null`                                                        | (自定义 hook) 添加到行为列表前的 hook，有值时，所有的用户行为都要经过该 hook 处理，若返回 false，该行为不会添加到列表中                                                                                                 |
-|   `beforeDataReport`   | `function` | `null`                                                        | (自定义 hook) 数据上报前的 hook，有值时，所有的上报数据都要经过该 hook 处理，若返回 false，该条数据不会上报                                                                                                             |
 | `onRouteChange` | `function` | `null`                                                        | 路由跳转之后的回调函数，会返回from,to两个作为函数参数
                          |
 
