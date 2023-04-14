@@ -29,18 +29,6 @@ export class Options {
   recordScreenTypeList: string[]; // 上报录屏的错误列表
   silentPerformance = false; // 是否开启监控性能
   useBeacon = false; // 使用beacon上报
-  appOnLaunch: Function = () => {};
-  appOnShow: Function = () => {};
-  onPageNotFound: Function = () => {};
-  appOnHide: Function = () => {};
-  pageOnUnload: Function = () => {};
-  pageOnShow: Function = () => {};
-  pageOnHide: Function = () => {};
-  onShareAppMessage: Function = () => {};
-  onShareTimeline: Function = () => {};
-  onTabItemTap: Function = () => {};
-  wxNavigateToMiniProgram: Function;
-  triggerWxEvent: Function = () => {};
   onRouteChange?: Function;
   constructor() {
     this.enableTraceId = false;
@@ -76,18 +64,6 @@ export class Options {
       recordScreenTypeList,
       silentPerformance,
       useBeacon,
-      appOnLaunch,
-      appOnShow,
-      appOnHide,
-      pageOnUnload,
-      pageOnShow,
-      pageOnHide,
-      onPageNotFound,
-      onShareAppMessage,
-      onShareTimeline,
-      onTabItemTap,
-      wxNavigateToMiniProgram,
-      triggerWxEvent,
       maxDuplicateCount,
       onRouteChange,
     } = options;
