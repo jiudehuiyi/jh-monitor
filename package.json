@@ -1,6 +1,6 @@
 {
   "name": "jh-monitor",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "一款轻量级的收集页面的用户点击行为、路由跳转、接口报错、代码报错、并上报服务端的前端监控SDK ，可用来收集并上报：代码报错、性能数据、页面录屏、用户行为、白屏检测等个性化指标数据",
   "main": "dist/index.min.js",
   "module": "dist/index.esm.js",
