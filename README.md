@@ -79,7 +79,6 @@ JhMonitor.init({
 |   `recordScreentime`   | `number`   | `10`                                                          | 单次录屏时长，silentRecordScreen 设为 true， 开启录屏后该设置才有效                                                                                                                                                     |
 | `recordScreenTypeList` | `array`    | `['error', 'unhandledrejection', 'resource', 'fetch', 'xhr']` | 上报录屏的错误列表，默认会上报所有错误发生时的录屏信息，如设置 ['error', 'unhandledrejection'] 则只会上报代码报错时的录屏                                                                                               |
 | `onRouteChange` | `function` | `null`                                                        | 路由跳转之后的回调函数，会返回from,to两个作为函数参数
-                         |
 
 ## jh-monitor 前端监控参考文章
 [前端监控体系及实现技术详解](https://juejin.cn/post/6936562262480158728#heading-16)
